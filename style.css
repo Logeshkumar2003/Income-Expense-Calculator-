@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form input,
+.form select,
+.form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+}
+
+.form button {
+    background: #28a745;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form button#resetBtn {
+    background: #dc3545;
+}
+
+.filters {
+    margin-bottom: 20px;
+}
+
+.filters label {
+    margin-right: 15px;
+}
+
+.summary {
+    margin-bottom: 20px;
+}
+
+.summary p {
+    margin: 5px 0;
+}
+
+.entries h2 {
+    margin-bottom: 10px;
+}
+
+#entryList {
+    list-style: none;
+}
+
+#entryList li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+}
+
+#entryList li button {
+    background: #ffc107;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#entryList li button.deleteBtn {
+    background: #dc3545;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .form {
+        flex-direction: column;
+    }
+}
